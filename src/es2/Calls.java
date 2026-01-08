@@ -10,4 +10,12 @@ public class Calls {
         this.numberCalled = number;
     }
 // METODI
+
+    public long getNumberCalled() {
+        return numberCalled;
+    }
+
+    public double getMinutes() {
+        return minutes;
+    }
 }

@@ -19,4 +19,24 @@ public class Sim {
         System.out.println("Credito :" + anySim.credit + " euro");
         System.out.println("Chiamate effettuate :" + Arrays.toString(anySim.callList));
     }
+
+    public long getNumber() {
+        return number;
+    }
+
+    public void setNumber(long number) {
+        if(number > 1000000000 )
+        this.number = number;
+        else {
+            System.out.println("numero non valido riprova con un numero di telefono valido");
+        }
+    }
+
+    public double getCredit() {
+        return credit;
+    }
+
+    public String getCallList() {
+        return Arrays.toString(callList);
+    }
 }
