@@ -14,10 +14,10 @@ public class Sim {
         this.callList = new Calls[5];
     }
 //    METODI
-    public static void printSIMData(Sim anySim) {
-        System.out.println("Dettagli SIM: Numero :" + anySim.number);
-        System.out.println("Credito :" + anySim.credit + " euro");
-        System.out.println("Chiamate effettuate :" + Arrays.toString(anySim.callList));
+    public  void printSIMData() {
+        System.out.println("Dettagli SIM: Numero :" + this.number);
+        System.out.println("Credito :" + this.credit + " euro");
+        System.out.println("Chiamate effettuate :" + Arrays.toString(this.callList));
     }
 
     public long getNumber() {
@@ -32,11 +32,15 @@ public class Sim {
         }
     }
 
+    public void setCallList(Calls[] callList) {
+        this.callList = callList;
+    }
+
     public double getCredit() {
         return credit;
     }
 
-    public String getCallList() {
-        return Arrays.toString(callList);
+    public Calls[] getCallList() {
+       return callList;
     }
 }

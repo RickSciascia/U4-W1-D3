@@ -28,4 +28,24 @@ public class Cliente {
                 ", dataIscrizione=" + dataIscrizione +
                 '}';
     }
+
+    public int getCodCliente() {
+        return codCliente;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getCognome() {
+        return cognome;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public LocalDate getDataIscrizione() {
+        return dataIscrizione;
+    }
 }

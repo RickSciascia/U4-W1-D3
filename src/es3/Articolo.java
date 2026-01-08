@@ -13,7 +13,7 @@ public class Articolo {
         this.price = price;
         this.piecesInStorage = storage;
     }
-
+// METODI
     @Override
     public String toString() {
         return "Articolo{" +
@@ -22,5 +22,21 @@ public class Articolo {
                 ", price=" + price +
                 ", piecesInStorage=" + piecesInStorage +
                 '}';
+    }
+
+    public int getPiecesInStorage() {
+        return piecesInStorage;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public long getEAN() {
+        return EAN;
     }
 }

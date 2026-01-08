@@ -18,4 +18,12 @@ public class Calls {
     public double getMinutes() {
         return minutes;
     }
+
+    @Override
+    public String toString() {
+        return "Calls{" +
+                "minutes=" + minutes +
+                ", numberCalled=" + numberCalled +
+                '}';
+    }
 }
